@@ -1,0 +1,33 @@
+/home/christina/anaconda3/envs/lora_vit/lib/python3.11/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/christina/anaconda3/envs/lora_vit/lib/python3.11/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Namespace(num_runs=1, seed=0, val_size=0.1, num_val=3, num_runs_val=3, error_analysis=False, verbose=True, store=False, save_path=None, agent='PCR', update='random', retrieve='random', optimizer='Adam', learning_rate=0.0001, epoch=1, batch=4, test_batch=128, weight_decay=0.0001, num_tasks=5, fix_order=True, plot_sample=False, data='cifar10', cl_type='nc', ns_factor=(0.0, 0.4, 0.8, 1.2, 1.6, 2.0, 2.4, 2.8, 3.2, 3.6), ns_type='noise', ns_task=(1, 1, 2, 2, 2, 2), online=True, mem_size=200, eps_mem_batch=10, lambda_=100, alpha=0.9, fisher_update_after=50, subsample=50, gss_mem_strength=10, gss_batch_size=10, k=5, aser_type='asvm', n_smp_cls=2.0, stm_capacity=1000, classifier_chill=0.01, log_alpha=-300, minlr=0.0005, clip=10.0, mem_epoch=70, labels_trick=False, separated_softmax=False, kd_trick=False, kd_trick_star=False, review_trick=False, ncm_trick=False, mem_iters=1, min_delta=0.0, patience=0, cumulative_delta=False, temp=0.07, buffer_tracker=False, warmup=4, head='mlp', cuda=True)
+Setting up data stream
+Files already downloaded and verified
+Files already downloaded and verified
+data setup time: 1.1204321384429932
+Task: 0, Labels:[0, 1]
+Task: 1, Labels:[2, 3]
+Task: 2, Labels:[4, 5]
+Task: 3, Labels:[6, 7]
+Task: 4, Labels:[8, 9]
+buffer has 200 slots
+-----------run 0 training batch 0-------------
+size: (10000, 32, 32, 3), (10000,)
+[9.86e-01 0.00e+00 2.00e-02 0.00e+00 5.00e-04]
+-----------run 0 training batch 1-------------
+size: (10000, 32, 32, 3), (10000,)
+[0.73  0.901 0.    0.    0.   ]
+-----------run 0 training batch 2-------------
+size: (10000, 32, 32, 3), (10000,)
+[0.758 0.224 0.887 0.    0.   ]
+-----------run 0 training batch 3-------------
+size: (10000, 32, 32, 3), (10000,)
+[0.747  0.2125 0.357  0.97   0.    ]
+-----------run 0 training batch 4-------------
+size: (10000, 32, 32, 3), (10000,)
+[0.544  0.1685 0.408  0.7765 0.8985]
+-----------run 0-----------avg_end_acc 0.5591-----------train time 3645.640993118286
+----------- Total 1 run: 3646.761487007141s -----------
+----------- Avg_End_Acc (0.5591, nan) Avg_End_Fgt (0.36940000000000006, nan) Avg_Acc (0.711045, nan) Avg_Bwtp (0.0, nan) Avg_Fwt (0.00205, nan)-----------

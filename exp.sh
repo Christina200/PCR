@@ -1,0 +1,2 @@
+  CUDA_VISIBLE_DEVICES=2 nohup python general_main.py --num_runs 1 --data cifar10 --cl_type nc --agent PCR --retrieve random --update random --mem_size 200 --num_tasks 5 --fix_order True --learning_rate 0.0001 --weight_decay 0.0001 > pcr_cifar10_vit_tuned.log
+  CUDA_VISIBLE_DEVICES=2 nohup python general_main.py --num_runs 1 --data cifar100 --cl_type nc --agent PCR --retrieve random --update random --mem_size 200 --num_tasks 10 --fix_order True --learning_rate 0.0001 --weight_decay 0.0001 > pcr_cifar100_vit_tuned.log

@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
     ########################Agent#########f################
     parser.add_argument('--agent', dest='agent', default='PCR',
-                        choices=['ER', 'EWC', 'AGEM', 'CNDPM', 'LWF', 'ICARL', 'GDUMB', 'ASER', 'SCR'],
+                        choices=['ER', 'EWC', 'AGEM', 'CNDPM', 'LWF', 'ICARL', 'GDUMB', 'ASER', 'SCR', 'PCR'],
                         help='Agent selection  (default: %(default)s)')
     parser.add_argument('--update', dest='update', default='random', choices=['random', 'GSS', 'ASER'],
                         help='Update method  (default: %(default)s)')
@@ -56,7 +56,7 @@ if __name__ == "__main__":
                         help='Retrieve method  (default: %(default)s)')
 
     ########################Optimizer#########################
-    parser.add_argument('--optimizer', dest='optimizer', default='SGD', choices=['SGD', 'Adam'],
+    parser.add_argument('--optimizer', dest='optimizer', default='Adam', choices=['SGD', 'Adam'],
                         help='Optimizer (default: %(default)s)')
     parser.add_argument('--learning_rate', dest='learning_rate', default=0.1,
                         type=float,
@@ -64,7 +64,7 @@ if __name__ == "__main__":
     parser.add_argument('--epoch', dest='epoch', default=1,
                         type=int,
                         help='The number of epochs used for one task. (default: %(default)s)')
-    parser.add_argument('--batch', dest='batch', default=10,
+    parser.add_argument('--batch', dest='batch', default=4,
                         type=int,
                         help='Batch size (default: %(default)s)')
     parser.add_argument('--test_batch', dest='test_batch', default=128,
